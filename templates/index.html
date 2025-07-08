@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reference List Generator</title>
+    <style>
+        body { font-family: Tahoma; background: #fefefe; color: #222; max-width: 700px; margin: auto; padding: 2em; }
+        h1 { font-size: 24px; }
+        label { display: block; margin-top: 1em; }
+        input[type="text"] { width: 100%; padding: 0.5em; font-size: 14px; }
+        button { margin-top: 1em; padding: 0.5em 1em; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <h1>📝 Reference List Generator</h1>
+    <form method="POST" action="/generate">
+        <label>Prefix: <input type="text" name="prefix" value="CEC"></label>
+        <label>Full Agency Name: <input type="text" name="agency" value="California Energy Commission"></label>
+        <label>Proceeding Code: <input type="text" name="proceeding" value="24-OPT-05"></label>
+        <button type="submit">Generate Reference List</button>
+    </form>
+</body>
+</html>
